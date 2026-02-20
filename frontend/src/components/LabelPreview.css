@@ -1,0 +1,127 @@
+.label-preview {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.preview-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.preview-content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.preview-label {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  background: white;
+  font-family: 'Courier New', monospace;
+}
+
+.label-field {
+  margin-bottom: 1rem;
+}
+
+.label-field.product-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.label-row .label-field {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.field-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.field-value {
+  color: #333;
+}
+
+.label-barcode {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.label-barcode svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.label-barcode-placeholder {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+}
+
+.label-barcode-placeholder p {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.preview-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+}
+
+.preview-note p {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .label-preview {
+    padding: 1rem;
+  }
+
+  .preview-label {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .label-field.product-name {
+    font-size: 1.25rem;
+  }
+
+  .label-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
